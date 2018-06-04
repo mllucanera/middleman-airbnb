@@ -2,7 +2,7 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
+<!-- <div id="home">
   <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
     <p>
@@ -12,4 +12,55 @@ title: Le Wagon - Middleman
       <%= link_to "More about this template", "about.html" %>
     </p>
   </div>
+</div> -->
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+  <div class="banner-content">
+    <h1>Welcome home</h1>
+    <p>Book unique homes and experience a city like a local.</p>
+
+
+    <form action="" class="form-inline">
+      <div class="form-group">
+        <input type="text" id="where" class="form-control input-lg" placeholder="Where?">
+        <input type="text" id="when" class="form-control input-lg" placeholder="When?">
+        <select id= "guest" class="form-control input-lg">
+          <option value="1 guest">1 guest</option>
+          <option value="2 guest">2 guest</option>
+          <option value="3 guest">3 guest</option>
+        </select>
+
+        <a class="btn btn-primary btn-lg">Search</a>
+      </div>
+    </form>
+  </div>
 </div>
+
+
+
+
+<div class= "container">
+
+  <h2 class= "text-center">Recent Flats</h2>
+  <div class="row">
+
+    <% data.cities.each do |key, value| %>
+    <div class="col-xs-12 col-sm-4">
+
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(
+      'https://kitt.lewagon.com/placeholder/cities/<%= value.name %>');">
+      <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/<%= value.user %>">
+      <a class="card-link" href="#" ></a>
+      <div class="card-description">
+        <h2> <%= value.name.upcase %>, <%= value.country.upcase %> </h2>
+        <h3> <%= value.name %> </h3>
+        <p> <%= value.frase%> </p>
+      </div>
+    </div>
+  </div>
+
+  <% end %>
+
+</div>
+</div>
+

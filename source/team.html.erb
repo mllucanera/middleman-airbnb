@@ -1,0 +1,13 @@
+<h1>This template is built with <i class="fa fa-heart"></i> by</h1>
+
+
+<ul class="list-inline text-center">
+<% data.users.each do |key, value| %>
+  <li>
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{value.user}", class: "avatar-large" %>
+    <h3><%= value.name.capitalize %></h3>
+    <a href="https://github.com/<%=value.user%>"> <i class= "fa fa-github"> </i> view profile</a>
+  </li>
+<% end %>
+</ul>
+

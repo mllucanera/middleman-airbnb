@@ -1,0 +1,15 @@
+paris:
+  name: paris
+  country: France
+  frase: Charming room in Montmartre
+  user: ssaunier
+tokyo:
+  name: tokyo
+  country: Japan
+  frase: Small flat in Tokyo
+  user: jotisempe
+london:
+  name: london
+  country: UK
+  frase: Nice flat in Piccadilly
+  user: mllucanera
