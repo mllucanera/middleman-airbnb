@@ -2,11 +2,11 @@
 
 
 <ul class="list-inline text-center">
-<% data.users.each do |key, value| %>
+<% data.users.each do |value| %>
   <li>
-    <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{value.user}", class: "avatar-large" %>
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{value.github_nickname}", class: "avatar-large" %>
     <h3><%= value.name.capitalize %></h3>
-    <a href="https://github.com/<%=value.user%>"> <i class= "fa fa-github"> </i> view profile</a>
+    <a href="https://github.com/<%=value.github_nickname%>"> <i class= "fa fa-github"> </i> view profile</a>
   </li>
 <% end %>
 </ul>

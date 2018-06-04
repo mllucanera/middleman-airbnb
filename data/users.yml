@@ -1,8 +1,6 @@
-luli:
-  name: 'Maria Laura Lucanera'
-  user: 'mllucanera'
-joti:
-  name: 'Josefina Sempe'
-  user: 'jotisempe'
+- name: 'Maria Laura Lucanera'
+  github_nickname: 'mllucanera'
+- name: 'Josefina Sempe'
+  github_nickname: 'jotisempe'
 
 
